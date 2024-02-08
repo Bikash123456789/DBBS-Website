@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Page</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="serviceStyle.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- NAVBAR------------------ -->
+      <nav class="navbar">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="106"
+            height="16"
+            viewBox="0 0 106 16"
+            fill="none"
+          >
+            <path
+              d="M50.6139 4.576V4.8C50.6139 6.048 50.1763 7.11467 49.3009 8C50.1763 8.88534 50.6139 9.952 50.6139 11.2V11.44C50.6139 12.6987 50.1656 13.776 49.2689 14.672C48.3722 15.5573 47.2941 16 46.0345 16L27.8767 16C27.834 16 27.7966 15.9893 27.7646 15.968C27.7432 15.936 27.7326 15.904 27.7326 15.872L27.7326 0.144004C27.7326 0.101338 27.7432 0.0693377 27.7646 0.0480044C27.7966 0.0160044 27.834 4.3752e-06 27.8767 4.3752e-06L46.0345 4.3752e-06C47.2941 4.3752e-06 48.3722 0.448004 49.2689 1.344C50.1656 2.24 50.6139 3.31734 50.6139 4.576ZM30.935 2.752V6.64L46.0345 6.64C46.4081 6.64 46.7283 6.50667 46.9952 6.24C47.2727 5.96267 47.4115 5.63734 47.4115 5.264V4.112C47.4115 3.73867 47.2727 3.41867 46.9952 3.152C46.7283 2.88534 46.4081 2.752 46.0345 2.752L30.935 2.752ZM47.4115 11.888V10.752C47.4115 10.368 47.2727 10.0427 46.9952 9.776C46.7283 9.50934 46.4081 9.376 46.0345 9.376L30.935 9.376L30.935 13.264L46.0345 13.264C46.4081 13.264 46.7283 13.1307 46.9952 12.864C47.2727 12.5973 47.4115 12.272 47.4115 11.888Z"
+              fill="#ECECEC"
+            />
+            <path
+              d="M78.315 4.576V4.8C78.315 6.048 77.8773 7.11467 77.002 8C77.8773 8.88534 78.315 9.952 78.315 11.2V11.44C78.315 12.6987 77.8666 13.776 76.97 14.672C76.0733 15.5573 74.9951 16 73.7355 16H55.5777C55.535 16 55.4976 15.9893 55.4656 15.968C55.4443 15.936 55.4336 15.904 55.4336 15.872V0.144004C55.4336 0.101338 55.4443 0.0693377 55.4656 0.0480044C55.4976 0.0160044 55.535 4.3752e-06 55.5777 4.3752e-06L73.7355 4.3752e-06C74.9951 4.3752e-06 76.0733 0.448004 76.97 1.344C77.8666 2.24 78.315 3.31734 78.315 4.576ZM58.636 2.752V6.64L73.7355 6.64C74.1091 6.64 74.4294 6.50667 74.6962 6.24C74.9738 5.96267 75.1125 5.63734 75.1125 5.264V4.112C75.1125 3.73867 74.9738 3.41867 74.6962 3.152C74.4294 2.88534 74.1091 2.752 73.7355 2.752L58.636 2.752ZM75.1125 11.888V10.752C75.1125 10.368 74.9738 10.0427 74.6962 9.776C74.4294 9.50934 74.1091 9.376 73.7355 9.376L58.636 9.376V13.264L73.7355 13.264C74.1091 13.264 74.4294 13.1307 74.6962 12.864C74.9738 12.5973 75.1125 12.272 75.1125 11.888Z"
+              fill="#ECECEC"
+            />
+            <path
+              d="M86.3371 4.112V5.248C86.3371 5.632 86.4705 5.95734 86.7374 6.224C87.0042 6.49067 87.3245 6.624 87.6981 6.624L101.437 6.624C102.696 6.624 103.769 7.072 104.655 7.968C105.552 8.85333 106 9.93067 106 11.2V11.424C106 12.6827 105.552 13.76 104.655 14.656C103.769 15.552 102.696 16 101.437 16L84.1754 16C84.1434 16 84.1114 15.9893 84.0794 15.968C84.058 15.936 84.0473 15.8987 84.0473 15.856V13.392C84.0473 13.3493 84.058 13.3173 84.0794 13.296C84.1114 13.264 84.1434 13.248 84.1754 13.248L101.437 13.248C101.81 13.248 102.13 13.1147 102.397 12.848C102.664 12.5813 102.798 12.2613 102.798 11.888V10.736C102.798 10.3627 102.664 10.0427 102.397 9.776C102.13 9.49867 101.81 9.36 101.437 9.36L87.6981 9.36C86.4385 9.36 85.3603 8.91734 84.4636 8.032C83.5776 7.136 83.1346 6.05867 83.1346 4.8V4.56C83.1346 3.30134 83.5776 2.22934 84.4636 1.344C85.3603 0.448004 86.4385 4.3752e-06 87.6981 4.3752e-06L104.959 4.3752e-06C104.991 4.3752e-06 105.018 0.0160044 105.039 0.0480044C105.071 0.0693377 105.087 0.0960044 105.087 0.128004V2.608C105.087 2.64 105.071 2.672 105.039 2.704C105.018 2.72534 104.991 2.736 104.959 2.736L87.6981 2.736C87.3245 2.736 87.0042 2.86934 86.7374 3.136C86.4705 3.40267 86.3371 3.728 86.3371 4.112Z"
+              fill="#ECECEC"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5203 1.344C20.6343 0.448 19.5562 0 18.2859 0L0.128097 0C0.096073 0 0.0640486 0.016 0.0320243 0.048C0.0106748 0.0693333 0 0.101333 0 0.144L0 15.856C0 15.8987 0.0106748 15.936 0.0320243 15.968C0.0640486 15.9893 0.096073 16 0.128097 16L18.2859 16C19.5562 16 20.6343 15.5573 21.5203 14.672C22.417 13.776 22.8654 12.6933 22.8654 11.424L22.8654 4.576C22.8654 3.30667 22.417 2.22933 21.5203 1.344ZM19.2626 3.152C19.5295 3.41867 19.6629 3.73867 19.6629 4.112L19.6629 11.888C19.6629 12.2613 19.5295 12.5867 19.2626 12.864C18.9958 13.1307 18.6702 13.264 18.2859 13.264L3.20243 13.264L3.20243 2.736H3.21947V1.38909L7.08281 1.38909L7.65309 2.736L18.2859 2.736C18.6702 2.736 18.9958 2.87467 19.2626 3.152Z"
+              fill="#ECECEC"
+            />
+          </svg>
+        </div>
+        <div class="navlist">
+          <a href="">HOME</a>
+          <a href="">SERVICE</a>
+          <a href="">INDUSTRIES</a>
+          <a href="">ABOUT US</a>
+        </div>
+      </nav>
+
+      <!-- ONE------------------ -->
+      <div class="one section">
+        <div class="one-top">
+          <div class="one-item">Accounting Service</div>
+          <div class="one-item">Data management</div>
+          <div class="one-item">e-commerce</div>
+          <div class="one-item">Learning development</div>
+          <div class="one-item">Analytics procedure</div>
+          <div class="one-item">Analytics procedure</div>
+        </div>
+        <div class="one-bottom">
+          <div class="one-left">
+            <div class="title">Accounting Service</div>
+            <p>
+              Unleashing the Power of Comprehensive Accounting Services Tailored
+              Specifically to Meet Your Unique Business Needs and Goals
+            </p>
+          </div>
+          <div class="one-right">
+            <img
+              class="one-image"
+              src="Assets/One/one-image.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- ------TWO ---------- -->
+      <div class="two section">
+        <div class="two-top">
+          <div class="two-img-container">
+            <img
+              class="two-image"
+              src="Assets/two/two-image.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <div class="two-top-right">
+            <div class="title">Hybrid way of operations</div>
+            <p>
+              Optimize Efficiency and Maximize Savings. Elevate Your Business
+              with DBBS Outsourced Accounting Services
+            </p>
+          </div>
+        </div>
+        <div class="two-bottom">
+          <div class="two-bottom-item">
+            <div class="two-bottom-title">Visibility of revenue stream</div>
+            <p>
+              Enhancing Visibility and Reliability in Revenue Stream Management
+              Through Accurate and Timely Accounting Processing
+            </p>
+          </div>
+          <div class="two-bottom-item">
+            <div class="two-bottom-title">Classification and recording</div>
+            <p>
+              Elevating Accounting Standards Through Vigilant Classification,
+              Recording, and Proactive Pre-Audit Measures at DBBS
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------THREE ---------- -->
+      <div class="three section">
+        <div class="title">Our Tools for Accounting</div>
+        <div class="three-items-container">
+          <div class="three-item">
+            <img src="Assets/three/1.png" alt="" class="three-img" />
+            <div class="three-item-title">Invoice Processing</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/2.png" alt="" class="three-img" />
+            <div class="three-item-title">Receipts & Payments</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/3.png" alt="" class="three-img" />
+            <div class="three-item-title">Finance & Accounts Entries</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/4.png" alt="" class="three-img" />
+            <div class="three-item-title">Financial Flow Chart</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/5.png" alt="" class="three-img" />
+            <div class="three-item-title">Projection & Forecasting</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/6.png" alt="" class="three-img" />
+            <div class="three-item-title">Costing & Pricing</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/7.png" alt="" class="three-img" />
+            <div class="three-item-title">MIS & Daily Dashboards</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/8.png" alt="" class="three-img" />
+            <div class="three-item-title">Production Accounting</div>
+          </div>
+
+          <div class="three-item">
+            <img src="Assets/three/9.png" alt="" class="three-img" />
+            <div class="three-item-title">Project Accounting</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOUR Slider -->
+
+      <div class="four section">
+        <div class="four-top">
+          <div class="four-top-left">
+            <div class="four-top-title">How it works ?</div>
+            <p>
+              Cultivating Operational Excellence: DBBS as Your Proactive
+              Accounting Partner, Offering Streamlined Processes, Tailored
+              Reporting Formats, MIS, Dashboards, and Seamless ERP Integration.
+              Enhance Efficiency with Our Secured ERP Platforms or Leverage
+              Remote Capabilities on Your Existing Platform
+            </p>
+          </div>
+          <div class="four-top-right">
+            <img
+              class="four-img-main"
+              src="Assets/four/Icon container (1).png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="four-bottom">
+          <!-- FOUR-ITEM -->
+          <!-- Swiper -->
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="four-item">
+                  <img src="Assets/four/1.png" alt="" class="four-item-image" />
+                  <div class="four-item-title">Requirement Gathering</div>
+                  <p>
+                    Engaging in conversation with the client to understand
+                    challenges encountered and design a solution
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="four-item">
+                  <img src="Assets/four/2.png" alt="" class="four-item-image" />
+                  <div class="four-item-title">Outline Scope</div>
+                  <p>
+                    Bringing the consensus on the best solution and outlining
+                    the scope of work, the deliverables and cost benefits to
+                    client.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="four-item">
+                  <img src="Assets/four/3.png" alt="" class="four-item-image" />
+                  <div class="four-item-title">
+                    Prototype Testing & Result evaluation
+                  </div>
+                  <p>
+                    Crafting Real-time Workarounds, Conducting Scope Tests, and
+                    Evaluating Results for Client Objectives
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="four-item">
+                  <img src="Assets/four/4.png" alt="" class="four-item-image" />
+                  <div class="four-item-title">Service Level Agrement</div>
+                  <p>
+                    Upon successful testing, the scope, the deliverables and
+                    cost- benefits are formalized into a Service Level Agreement
+                    executed between the client and DBBSGroup.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="four-item">
+                  <img src="Assets/four/5.png" alt="" class="four-item-image" />
+                  <div class="four-item-title">Project Commencement</div>
+                  <p>
+                    Ensure adequate infrastructure and kick start the projects
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div> -->
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <!-- <div class="four-item">
+            <img src="Assets/four/1.png" alt="" class="four-item-image" />
+            <div class="four-item-title">Requirement Gathering</div>
+            <p>
+              Engaging in conversation with the client to understand challenges
+              encountered and design a solution
+            </p>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- FIVE----------------- -->
+      <div class="five section">
+        <div class="five-top">
+          Accounting Services Across Diverse Industries
+        </div>
+        <div class="five-bottom">
+          <div class="five-item">
+            <div class="five-item-title">Retail</div>
+            <p>
+              Unlock Retail Success: Empowering Multichannel Excellence for
+              Enhanced Customer Experience!
+            </p>
+          </div>
+
+          <div class="five-item">
+            <div class="five-item-title">Hospitality</div>
+            <p>
+              Elevate Hospitality Excellence: Streamlining Costs, Quality, and
+              Staffing Solutions
+            </p>
+          </div>
+
+          <div class="five-item">
+            <div class="five-item-title">Eductaion</div>
+            <p>
+              Unlock the power of education without the hassle – elevate your
+              institution with our seamless outsourcing services.
+            </p>
+          </div>
+          <div class="five-item">
+            <div class="five-item-title">Transportation</div>
+            <p>
+              Accelerate your business with our transportation outsourcing
+              services—efficiency in the fast lane, cost-effectiveness in the
+              driver's seat
+            </p>
+          </div>
+          <div class="five-item">
+            <div class="five-item-title">Insurance</div>
+            <p>
+              Boost your insurance business: Outsource with us for peak
+              performance. We handle the details while you focus on success
+            </p>
+          </div>
+          <div class="five-item">
+            <div class="five-item-title">Automotive</div>
+            <p>
+              Navigate efficiency with us. Drive success—outsource to
+              accelerate! Unleash your automotive business's potential with our
+              solutions.
+            </p>
+          </div>
+          <div class="five-item">
+            <div class="five-item-title">Gas & Service Station</div>
+            <p>
+              Outsource with us for efficient, excellent gas & service station
+              solutions.
+            </p>
+          </div>
+          <div class="five-item">
+            <div class="five-item-title">Food & Beverages</div>
+            <p>
+              Elevate your food business with us, where flavor meets efficiency,
+              putting success on the menu through culinary operations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------SIX------------------- -->
+      <div class="six section">
+        <div class="six-left">
+          <div class="title">
+            Expect <b>Brilliance</b> in every <b>Data</b> <b>Vertical</b>
+          </div>
+          <div class="six-left-box">
+            <div class="free-btn">
+              Try for free
+              <div class="arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42"
+                  height="15"
+                  viewBox="0 0 42 15"
+                  fill="none"
+                >
+                  <path
+                    d="M41.2071 8.20711C41.5976 7.81658 41.5976 7.18342 41.2071 6.79289L34.8431 0.428932C34.4526 0.0384078 33.8195 0.0384078 33.4289 0.428932C33.0384 0.819457 33.0384 1.45262 33.4289 1.84315L39.0858 7.5L33.4289 13.1569C33.0384 13.5474 33.0384 14.1805 33.4289 14.5711C33.8195 14.9616 34.4526 14.9616 34.8431 14.5711L41.2071 8.20711ZM0 8.5H40.5V6.5H0V8.5Z"
+                    fill="#CBCCCD"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="six-right">
+          <img src="Assets/six/2 (1).png" alt="" class="six-image" />
+        </div>
+      </div>
+
+      <!-- ---------------FOOTER------- -->
+      <div class="footer section">
+        <div class="footer-top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="106"
+            height="16"
+            viewBox="0 0 106 16"
+            fill="none"
+          >
+            <path
+              d="M50.6139 4.576V4.8C50.6139 6.048 50.1763 7.11467 49.3009 8C50.1763 8.88534 50.6139 9.952 50.6139 11.2V11.44C50.6139 12.6987 50.1656 13.776 49.2689 14.672C48.3722 15.5573 47.2941 16 46.0345 16L27.8767 16C27.834 16 27.7966 15.9893 27.7646 15.968C27.7432 15.936 27.7326 15.904 27.7326 15.872L27.7326 0.144004C27.7326 0.101338 27.7432 0.0693377 27.7646 0.0480044C27.7966 0.0160044 27.834 4.3752e-06 27.8767 4.3752e-06L46.0345 4.3752e-06C47.2941 4.3752e-06 48.3722 0.448004 49.2689 1.344C50.1656 2.24 50.6139 3.31734 50.6139 4.576ZM30.935 2.752V6.64L46.0345 6.64C46.4081 6.64 46.7283 6.50667 46.9952 6.24C47.2727 5.96267 47.4115 5.63734 47.4115 5.264V4.112C47.4115 3.73867 47.2727 3.41867 46.9952 3.152C46.7283 2.88534 46.4081 2.752 46.0345 2.752L30.935 2.752ZM47.4115 11.888V10.752C47.4115 10.368 47.2727 10.0427 46.9952 9.776C46.7283 9.50934 46.4081 9.376 46.0345 9.376L30.935 9.376L30.935 13.264L46.0345 13.264C46.4081 13.264 46.7283 13.1307 46.9952 12.864C47.2727 12.5973 47.4115 12.272 47.4115 11.888Z"
+              fill="#ECECEC"
+            />
+            <path
+              d="M78.315 4.576V4.8C78.315 6.048 77.8773 7.11467 77.002 8C77.8773 8.88534 78.315 9.952 78.315 11.2V11.44C78.315 12.6987 77.8666 13.776 76.97 14.672C76.0733 15.5573 74.9951 16 73.7355 16H55.5777C55.535 16 55.4976 15.9893 55.4656 15.968C55.4443 15.936 55.4336 15.904 55.4336 15.872V0.144004C55.4336 0.101338 55.4443 0.0693377 55.4656 0.0480044C55.4976 0.0160044 55.535 4.3752e-06 55.5777 4.3752e-06L73.7355 4.3752e-06C74.9951 4.3752e-06 76.0733 0.448004 76.97 1.344C77.8666 2.24 78.315 3.31734 78.315 4.576ZM58.636 2.752V6.64L73.7355 6.64C74.1091 6.64 74.4294 6.50667 74.6962 6.24C74.9738 5.96267 75.1125 5.63734 75.1125 5.264V4.112C75.1125 3.73867 74.9738 3.41867 74.6962 3.152C74.4294 2.88534 74.1091 2.752 73.7355 2.752L58.636 2.752ZM75.1125 11.888V10.752C75.1125 10.368 74.9738 10.0427 74.6962 9.776C74.4294 9.50934 74.1091 9.376 73.7355 9.376L58.636 9.376V13.264L73.7355 13.264C74.1091 13.264 74.4294 13.1307 74.6962 12.864C74.9738 12.5973 75.1125 12.272 75.1125 11.888Z"
+              fill="#ECECEC"
+            />
+            <path
+              d="M86.3371 4.112V5.248C86.3371 5.632 86.4705 5.95734 86.7374 6.224C87.0042 6.49067 87.3245 6.624 87.6981 6.624L101.437 6.624C102.696 6.624 103.769 7.072 104.655 7.968C105.552 8.85333 106 9.93067 106 11.2V11.424C106 12.6827 105.552 13.76 104.655 14.656C103.769 15.552 102.696 16 101.437 16L84.1754 16C84.1434 16 84.1114 15.9893 84.0794 15.968C84.058 15.936 84.0473 15.8987 84.0473 15.856V13.392C84.0473 13.3493 84.058 13.3173 84.0794 13.296C84.1114 13.264 84.1434 13.248 84.1754 13.248L101.437 13.248C101.81 13.248 102.13 13.1147 102.397 12.848C102.664 12.5813 102.798 12.2613 102.798 11.888V10.736C102.798 10.3627 102.664 10.0427 102.397 9.776C102.13 9.49867 101.81 9.36 101.437 9.36L87.6981 9.36C86.4385 9.36 85.3603 8.91734 84.4636 8.032C83.5776 7.136 83.1346 6.05867 83.1346 4.8V4.56C83.1346 3.30134 83.5776 2.22934 84.4636 1.344C85.3603 0.448004 86.4385 4.3752e-06 87.6981 4.3752e-06L104.959 4.3752e-06C104.991 4.3752e-06 105.018 0.0160044 105.039 0.0480044C105.071 0.0693377 105.087 0.0960044 105.087 0.128004V2.608C105.087 2.64 105.071 2.672 105.039 2.704C105.018 2.72534 104.991 2.736 104.959 2.736L87.6981 2.736C87.3245 2.736 87.0042 2.86934 86.7374 3.136C86.4705 3.40267 86.3371 3.728 86.3371 4.112Z"
+              fill="#ECECEC"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.5203 1.344C20.6343 0.448 19.5562 0 18.2859 0L0.128097 0C0.096073 0 0.0640486 0.016 0.0320243 0.048C0.0106748 0.0693333 0 0.101333 0 0.144L0 15.856C0 15.8987 0.0106748 15.936 0.0320243 15.968C0.0640486 15.9893 0.096073 16 0.128097 16L18.2859 16C19.5562 16 20.6343 15.5573 21.5203 14.672C22.417 13.776 22.8654 12.6933 22.8654 11.424L22.8654 4.576C22.8654 3.30667 22.417 2.22933 21.5203 1.344ZM19.2626 3.152C19.5295 3.41867 19.6629 3.73867 19.6629 4.112L19.6629 11.888C19.6629 12.2613 19.5295 12.5867 19.2626 12.864C18.9958 13.1307 18.6702 13.264 18.2859 13.264L3.20243 13.264L3.20243 2.736H3.21947V1.38909L7.08281 1.38909L7.65309 2.736L18.2859 2.736C18.6702 2.736 18.9958 2.87467 19.2626 3.152Z"
+              fill="#ECECEC"
+            />
+          </svg>
+        </div>
+        <div class="footer-mid">
+          <div class="footer-one">
+            <div class="footer-title">Solutions</div>
+            <div class="footer-item-container">
+              <h6>Data Management</h6>
+              <h6>Accounting Service</h6>
+              <h6>Learning & Development</h6>
+              <h6>Analytics procedure</h6>
+              <h6>Website Service</h6>
+              <h6>E- commerce support</h6>
+              <h6>CRM</h6>
+              <h6>ERP Solutions</h6>
+              <h6>Standard Operations</h6>
+            </div>
+          </div>
+          <div class="footer-two">
+            <div class="footer-title">Industries</div>
+            <div class="footer-item-container">
+              <h6>Retail</h6>
+              <h6>Hospitality</h6>
+              <h6>Education</h6>
+              <h6>Transportation</h6>
+              <h6>Insurance</h6>
+              <h6>Automotive</h6>
+              <h6>Gas and Service Station</h6>
+              <h6>Food & Bevergaaes</h6>
+            </div>
+          </div>
+          <div class="footer-three">
+            <div class="footer-title">Stay Connected</div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter email address" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="42"
+                height="15"
+                viewBox="0 0 42 15"
+                fill="none"
+              >
+                <path
+                  d="M41.2071 8.20711C41.5976 7.81658 41.5976 7.18342 41.2071 6.79289L34.8431 0.428932C34.4526 0.0384078 33.8195 0.0384078 33.4289 0.428932C33.0384 0.819457 33.0384 1.45262 33.4289 1.84315L39.0858 7.5L33.4289 13.1569C33.0384 13.5474 33.0384 14.1805 33.4289 14.5711C33.8195 14.9616 34.4526 14.9616 34.8431 14.5711L41.2071 8.20711ZM0 8.5H40.5V6.5H0V8.5Z"
+                  fill="#CBCCCD"
+                />
+              </svg>
+            </div>
+            <div class="connect-box">
+              <div class="footer-title">Connect us</div>
+              <div class="connect-item">
+                <img
+                  src="Assets/Footer/message.png"
+                  alt=""
+                  class="footer-icon"
+                />
+                <span>info@dbbsgroup.com</span>
+              </div>
+              <div class="connect-item">
+                <img src="Assets/Footer/phone.png" alt="" class="footer-icon" />
+                <span>+91 9880411661</span>
+              </div>
+              <div class="connect-item">
+                <img
+                  src="Assets/Footer/location.png"
+                  alt=""
+                  class="footer-icon"
+                />
+                <span>119st 64ave Delta BC canada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="media-icons">
+            <img src="Assets/Footer/icon-1.png" alt="" class="media-icon" />
+            <img src="Assets/Footer/icon-1.png" alt="" class="media-icon" />
+            <img src="Assets/Footer/icon-1.png" alt="" class="media-icon" />
+          </div>
+          <h4 class="media-title">@ 2024 DBBS GROUP</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        grabCursor: true,
+        autoplay: {
+          delay: 1500,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
